@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root {
+    --clr-primary: #608BC1;
+    --clr-secondary: #CBDCEB;
+
+    --font-clr: #133E87;
+
+    --bg-clr: #F3F3E0;
+
+
+}
+
+body {
+    background-color: var(--bg-clr);
+    color: var(--font-clr);
+}
