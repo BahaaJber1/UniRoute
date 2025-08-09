@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 
 function Header() {
 	return (
-		<header className="p-8 bg-[#000000bd] text-white">
+		<header className="p-8 bg-[#000000bd] text-white opacity-80">
 			<nav className="mx-15 flex justify-between">
 				<NavLink to="/">
 					<img src="image.png" alt="UniRoute Logo" className="bg-cover w-40 h-12"/>

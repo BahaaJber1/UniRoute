@@ -2,6 +2,10 @@ import { useForm } from "react-hook-form";
 import ErrorMessage from "./ErrorMessage";
 import Button from "./Button";
 
+//The form accept 2 props the mode which can be login or signup  with default value of login to make it reusable
+//The other is the callback function that will fire up when the form is submitted, right now its only for log this data
+//to the concole as a default behavior, later you can update it to interact with the database.   
+
 function Form({ mode = "login", onSubmit = (data) => console.log(data) }) {
 	const {
 		register,
