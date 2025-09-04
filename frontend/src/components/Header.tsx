@@ -3,16 +3,12 @@ import LinkButton from "./LinkButton";
 
 function Header() {
 	return (
-		<header className="py-5 bg-bg-secondary">
+		<header className="py-5 bg-bg-secondary sticky top-0">
 			<nav className="mx-15 flex items-center justify-between">
-				<NavLink to="/">
-					<img
-						src="image.png"
-						alt="UniRoute Logo"
-						className="bg-cover w-40 h-12"
-					/>
+				<NavLink to="/" className="text-3xl tracking-wide font-semibold">
+					Uni<span className="font-thin">Route</span>
 				</NavLink>
-				<ul className="flex gap-9 items-center">
+				<ul className="flex gap-20 items-center">
 					<li>
 						<NavLink to="page">page</NavLink>
 					</li>

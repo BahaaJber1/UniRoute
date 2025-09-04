@@ -3,7 +3,7 @@ function Footer() {
 	const year = date.getFullYear();
 
 	return (
-		<footer className="my-5 py-10 bg-blue-200 text-center">
+		<footer className="p-5 bg-bg-primary">
 			<p>All rights reserved © Bahaa Jber {year}</p>
 		</footer>
 	);
