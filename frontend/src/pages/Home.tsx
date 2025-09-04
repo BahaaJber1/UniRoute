@@ -1,6 +1,7 @@
-import Footer from "../ui/Footer";
-import Header from "../ui/Header";
-import Button from "../ui/Button";
+import Footer from "../ui/Footer.tsx";
+import Header from "../ui/Header.tsx";
+import Button from "../ui/Button.tsx";
+import { Link } from "react-router";
 
 function Home() {
 	return (
@@ -20,15 +21,10 @@ function Home() {
 					</p>
 
 					<div className="flex justify-center gap-10 mt-20">
-						<a
-							href="login"
-							className="bg-[var(--clr-primary)] p-3 rounded-4xl cursor-pointer hover:bg-[var(--clr-secondary)] hover:text-black duration-300"
-						>
-							Get started
-						</a>
-						<button className="border-2 border-[var(--clr-secondary)] p-3 rounded-4xl cursor-pointer hover:bg-blue-600 hover:border-blue-600 duration-300">
-							Learn more
-						</button>
+						<Link to="login">
+							<Button>Get started</Button>
+						</Link>
+						<Button variation="secondary">Learn more</Button>
 					</div>
 				</div>
 			</div>
