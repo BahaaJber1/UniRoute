@@ -1,17 +1,17 @@
-import Footer from "../ui/Footer.tsx";
-import Header from "../ui/Header.tsx";
-import Button from "../ui/Button.tsx";
-import { Link } from "react-router";
+import Footer from "../components/Footer.tsx";
+import Header from "../components/Header.tsx";
+import LinkButton from "../components/LinkButton.tsx";
 
 function Home() {
 	return (
 		<>
 			<Header />
 			{/* the upper section */}
-			<div className="bg-[url(/Hero.jpg)] bg-cover bg-center">
-				<div className="text-white text-center py-50">
-					<h1 className="text-[8rem]">
-						Take Control of Your Journey With UniRoute
+			<div className="bg-bg-primary">
+				<div className="text-center py-50">
+					<h1 className="text-9xl">
+						Take Control of Your Journey With{" "}
+						<span className="text-accent-primary font-bold">UniRoute</span>
 					</h1>
 					<p className="text-[1.2rem] max-w-200 m-auto">
 						Plan smarter, track your courses, and graduate with confidence.
@@ -20,11 +20,12 @@ function Home() {
 						all in one clean dashboard.
 					</p>
 
-					<div className="flex justify-center gap-10 mt-20">
-						<Link to="login">
-							<Button>Get started</Button>
-						</Link>
-						<Button variation="secondary">Learn more</Button>
+					<div className="flex justify-center items-center gap-10 mt-20">
+						<LinkButton to="login">Get started</LinkButton>
+
+						<LinkButton to="learn-more" variation="secondary">
+							Learn more
+						</LinkButton>
 					</div>
 				</div>
 			</div>
@@ -45,7 +46,9 @@ function Home() {
 						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 						aliquip ex
 					</p>
-					<Button>Learn More</Button>
+					<LinkButton variation="primary" to="learn-more">
+						Learn More
+					</LinkButton>
 				</div>
 			</div>
 

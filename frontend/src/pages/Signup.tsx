@@ -1,10 +1,9 @@
-import Footer from "../ui/Footer";
-import Form from "../ui/Form";
+import Footer from "../components/Footer";
+import Form from "../components/Form";
 
 function Signup() {
 	return (
 		<>
-
 			<Form mode="signup" />
 
 			<Footer />

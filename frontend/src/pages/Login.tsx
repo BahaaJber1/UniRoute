@@ -1,12 +1,12 @@
-import Footer from "../ui/Footer";
-import Form from "../ui/Form";
+import Footer from "../components/Footer";
+import Form from "../components/Form";
 
 function Login() {
 	return (
 		<>
-            <Form mode="login" />
-            
-            <Footer />
+			<Form mode="login" />
+
+			<Footer />
 		</>
 	);
 }

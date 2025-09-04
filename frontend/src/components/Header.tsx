@@ -1,10 +1,10 @@
 import { NavLink } from "react-router";
-import Button from "./Button";
+import LinkButton from "./LinkButton";
 
 function Header() {
 	return (
-		<header className="p-8 bg-[#000000bd] text-white opacity-80">
-			<nav className="mx-15 flex justify-between">
+		<header className="py-5 bg-bg-secondary">
+			<nav className="mx-15 flex items-center justify-between">
 				<NavLink to="/">
 					<img
 						src="image.png"
@@ -26,9 +26,7 @@ function Header() {
 					</li>
 
 					<li>
-						<NavLink to="login">
-							<Button>Login</Button>
-						</NavLink>
+						<LinkButton to="login">login</LinkButton>
 					</li>
 				</ul>
 			</nav>

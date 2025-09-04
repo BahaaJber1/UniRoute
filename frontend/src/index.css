@@ -1,17 +1,16 @@
 @import "tailwindcss";
 
-:root {
-    --clr-primary: #608BC1;
-    --clr-secondary: #CBDCEB;
+@theme {
+    --color-primary: hsl(36, 45%, 96%);
+    --color-secondary: hsla(36, 45%, 96%, 0.8);
 
-    --font-clr: #133E87;
+    --color-accent-primary: hsl(183, 100%, 35%);
+    --color-accent-secondary: hsl(183, 100%, 35%, 0.7);
 
-    --bg-clr: #F3F3E0;
-
-
+    --color-bg-primary: hsl(231, 13%, 20%);
+    --color-bg-secondary: hsl(231, 13%, 32%);
 }
 
 body {
-    background-color: var(--bg-clr);
-    color: var(--font-clr);
+    color: var(--color-primary);
 }
