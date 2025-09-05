@@ -20,6 +20,8 @@ function Home() {
 				description={ABOUT_CONTENT.description}
 				imageUrl={ABOUT_CONTENT.imageUrl}
 				imageAlt={ABOUT_CONTENT.imageAlt}
+				to={ABOUT_CONTENT.to}
+				linkText={ABOUT_CONTENT.linkText}
 			/>
 		</div>
 	);

@@ -10,15 +10,17 @@ export type LinkProps = {
 } & Omit<React.AnchorHTMLAttributes<HTMLAnchorElement>, "href">;
 
 export type HeroSectionProps = {
-	title: string;
-	highlight: string;
-	subtitle: string;
+	title?: string;
+	highlight?: string;
+	subtitle?: string;
 };
 
 export type AboutSectionProps = {
-	title: string;
-	subtitle: string;
-	description: string;
-	imageUrl: string;
-	imageAlt: string;
+	title?: string;
+	subtitle?: string;
+	description?: string;
+	imageUrl?: string;
+	imageAlt?: string;
+	to?: string;
+	linkText?: string;
 };

@@ -11,4 +11,6 @@ export const ABOUT_CONTENT = {
 		"Plan smarter, track your courses, and graduate with confidence. UniRoute helps you map out your academic path, mark completed courses, and get a personalized study plan for the next semester, all in one clean dashboard.",
 	imageUrl: "https://placehold.co/600x400",
 	imageAlt: "UniRoute Dashboard Preview",
+	to: "learn-more",
+	linkText: "Learn more",
 };
