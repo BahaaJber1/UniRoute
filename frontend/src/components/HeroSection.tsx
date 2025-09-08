@@ -1,4 +1,4 @@
-import LinkButton from "./LinkButton";
+import StyledLink from "./StyledLink";
 import type { HeroSectionProps } from "../types";
 
 function HeroSection({ title, highlight, subtitle }: HeroSectionProps) {
@@ -13,10 +13,10 @@ function HeroSection({ title, highlight, subtitle }: HeroSectionProps) {
 			</div>
 
 			<div className="flex justify-center items-center gap-10 mt-15">
-				<LinkButton to="login">Get started</LinkButton>
-				<LinkButton to="learn-more" variation="secondary">
+				<StyledLink to="login">Get started</StyledLink>
+				<StyledLink to="learn-more" variation="secondary">
 					Learn more
-				</LinkButton>
+				</StyledLink>
 			</div>
 		</div>
 	);

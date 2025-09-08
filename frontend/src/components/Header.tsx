@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import LinkButton from "./LinkButton";
+import StyledLink from "./StyledLink";
 
 function Header() {
 	return (
@@ -22,7 +22,7 @@ function Header() {
 					</li>
 
 					<li>
-						<LinkButton to="login">login</LinkButton>
+						<StyledLink to="login">login</StyledLink>
 					</li>
 				</ul>
 			</nav>

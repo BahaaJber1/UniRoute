@@ -1,5 +1,5 @@
 import type { AboutSectionProps } from "../types";
-import LinkButton from "./LinkButton";
+import StyledLink from "./StyledLink";
 
 function AboutSection({
 	title = "No title provided",
@@ -21,9 +21,9 @@ function AboutSection({
 				<p className="text-lg mb-4">{subtitle}</p>
 				<p className="mt-7">{description}</p>
 				<div className="mt-10">
-					<LinkButton variation="secondary" to={to}>
+					<StyledLink variation="secondary" to={to}>
 						{linkText}
-					</LinkButton>
+					</StyledLink>
 				</div>
 			</div>
 		</div>

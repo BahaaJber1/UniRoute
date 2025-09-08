@@ -1,14 +1,14 @@
 import { Link } from "react-router";
-import type { LinkProps } from "../types";
+import type { StyledLinkProps } from "../types";
 
-function LinkButton({
+function StyledLink({
 	children,
 	to,
 	variation = "primary",
 	size = "md",
 	className,
 	...restProps
-}: LinkProps) {
+}: StyledLinkProps) {
 	const defaultStyle =
 		"font-bold cursor-pointer rounded-4xl focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-primary duration-300";
 
@@ -21,17 +21,18 @@ function LinkButton({
 		sizeStyle = "px-12 py-4 text-lg";
 	}
 
-	let linkStyle;
+	let variationStyle;
 	if (variation === "primary") {
-		linkStyle =
+		variationStyle =
 			"bg-accent-primary text-bg-primary hover:bg-accent-secondary hover:text-primary ";
 	} else if (variation === "secondary") {
-		linkStyle =
+		variationStyle =
 			"outline-2 hover:outline-none hover:bg-bg-secondary hover:text-secondary";
 	} else if (variation === "danger") {
-		linkStyle = "text-secondary bg-red-800 hover:bg-red-500 hover:text-primary";
+		variationStyle =
+			"text-secondary bg-red-800 hover:bg-red-500 hover:text-primary";
 	}
-	const combinedClassName = `${defaultStyle} ${sizeStyle}  ${linkStyle} ${
+	const combinedClassName = `${defaultStyle} ${sizeStyle}  ${variationStyle} ${
 		className || ""
 	}`.trim();
 
@@ -42,4 +43,4 @@ function LinkButton({
 	);
 }
 
-export default LinkButton;
+export default StyledLink;

@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import ErrorMessage from "./ErrorMessage";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { formSchema, formFields } from "../types";
-import ButtonOrLink from "./ButtonOrLink";
+import StyledButton from "./StyledButton";
 
 //The form accept 2 props the mode which can be login or signup  with default value of login to make it reusable
 //The other is the callback function that will fire up when the form is submitted, right now its only for log this data
@@ -103,13 +103,13 @@ function Form({
 					)}
 				</div>
 				{mode !== "login" ? (
-					<ButtonOrLink disabled={isSubmitting}>
+					<StyledButton type="submit" disabled={isSubmitting}>
 						{isSubmitting ? "Loading..." : "Create"}
-					</ButtonOrLink>
+					</StyledButton>
 				) : (
-					<button disabled={isSubmitting}>
+					<StyledButton type="submit" disabled={isSubmitting}>
 						{isSubmitting ? "Loading..." : "Login"}
-					</button>
+					</StyledButton>
 				)}
 			</form>
 
