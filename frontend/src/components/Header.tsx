@@ -1,5 +1,6 @@
 import { NavLink } from "react-router";
 import StyledLink from "./StyledLink";
+import { NAVIGATION_DATA } from "../constants/headerData";
 
 function Header() {
 	return (
@@ -9,17 +10,11 @@ function Header() {
 					Uni<span className="font-thin">Route</span>
 				</NavLink>
 				<ul className="flex gap-20 items-center">
-					<li>
-						<NavLink to="page">page</NavLink>
-					</li>
-
-					<li>
-						<NavLink to="page">page</NavLink>
-					</li>
-
-					<li>
-						<NavLink to="page">page</NavLink>
-					</li>
+					{NAVIGATION_DATA.map((navigator) => (
+						<li key={navigator.to}>
+							<NavLink to={navigator.to}>{navigator.text}</NavLink>
+						</li>
+					))}
 
 					<li>
 						<StyledLink to="login">login</StyledLink>
